@@ -9,13 +9,10 @@
 $( document).ready( function() { 
         $('div').mouseover(function(){
             console.log("In!");
+            $('div').click(function(){
+                console.log("clicked!");
+                });
             });
-
-        $('div').mouseleave(function(){
-            console.log("Leave!");
-            });
-        $('div').click(function(){
-            console.log("clicked!");
-            });
+        $('div').mouseout(function($('div').unbind())});
         })
-    </script>
+</script>
